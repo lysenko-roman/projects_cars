@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f4f4;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: aquamarine;
+    padding: 20px 10px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#wrap-logo {
+    display: flex;
+    align-items: center;
+
+}
+
+
+header  a {
+    color: #0d49d0;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+ nav ul li, .sidebar ul li  {
+
+    list-style: none;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    color: cornflowerblue;
+    background: #f3f4f4;;
+}
+
+header a:hover {
+    background: #00fffb;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+header a.active {
+    background: #0ae3ea;
+
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wrap {
+    display: flex;
+
+}
+
+#content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.content_wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.sidebar {
+    width: 25%;
+    padding-top: 12px;
+}
+.sidebar ul li a {
+    width: 100%;
+    display: block;
+    padding: 8px 0 0 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0d49d0;
+}
+
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+    color: #0d49d0;
+}
+.sidebar ul li:hover a {
+
+    background: lightblue;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    }
+.product {
+
+    width: 33.33%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.p_border {
+    border: 1px solid #cccccc;
+    padding: 15px 8px;
+    margin: 8px;
+}
+
+
+.product img {
+    object-fit: cover;
+    max-width: 200px;
+    height: 140px;
+}
+
+.product h3 {
+    margin: 0;
+
+}
+
+#form_massage {
+    width: 100%;
+    padding: 8px;
+
+}
+
+.i_left {
+    padding-right: 8px;
+    width: 50%;
+}
+
+.i_right {
+    width: 50%;
+    padding-left: 8px;
+}
+
+
+#form_massage input {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+#form_massage .i_input {
+    width: 100%;
+    display: flex;
+
+}
+
+
+#form_massage .i_bottom {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.i_bottom textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+
+}
+
+.products >h2 {
+    width: 100%;
+    padding: 8px 8px 0 8px ;
+}
+
+button {
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    background: lightblue;
+    color: #0d49d0;
+    border-radius: 20px;
+    border-color: #0ae3ea;
+}
+button:hover {
+    background: #00fffb;
+    color: darkblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#footer {
+    max-width: 1100px;
+    margin: auto;
+    background: #0ae3ea;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: blue;
+
+}
+
+footer span {
+    display: block;
+    margin: auto;
+    text-align: center;
+    }
+
+
+@media(max-width: 920px) {
+    header a {
+        padding: 8px;
+        font-size: 14px;
+    }
+    }
+
+@media(max-width: 840px) {
+    .sidebar {
+        width: 100%;
+    }
+    .products {
+        width: 100%;
+    }
+}
+
+@media(max-width: 740px) {
+    #wrap-logo {
+        display: none;
+    }
+
+    .product {
+        width: 50%;
+    }
+}
+@media(max-width: 600px) {
+
+    header ul {
+        display: block;
+    }
+
+    header {
+       padding: 5px;
+       justify-content: center;
+    }
+
+    header a.active {
+        background: none;
+
+    }
+
+    header a:hover {
+        background: none;
+    }
+
+    nav ul, li, a, .sidebar ul, li, a {
+    padding-left: 0;
+}
+    .sidebar ul li a {
+        text-align: center;
+
+    }
+    .products  h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .product {
+        width: 100%;
+    }
+
+    .sidebar ul {
+        margin-left: 0;
+
+    }
+
+
+}
